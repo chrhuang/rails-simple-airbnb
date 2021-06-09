@@ -1,0 +1,12 @@
+<div style="width:400px;" class='container mt-4'>
+  <h1>Edit this flat</h1>
+  <%= simple_form_for @flat do |f| %>
+    <%= f.input :image_url %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :description %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.submit class: "btn btn-primary mt-3" %>
+  <% end %>
+</div>
